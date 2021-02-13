@@ -1,4 +1,4 @@
-require("dotenv").config;
+
 const db = require("../models");
 
 module.exports = (app) => {
