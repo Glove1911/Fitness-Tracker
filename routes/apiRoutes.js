@@ -20,6 +20,18 @@ module.exports = (app) => {
 
     });
 
+    app.get("/api/workouts", (req,res) => {
+        db.Workout.aggregate([
+            {
+                $addFields: {
+                    workoutTotal: {
+                        $sum: "$exercises.weight"}
+                    }
+                
+            }
+        ])
+    });
+
     app.put("/api/workouts/:id", ( req , res) => {
         db.Workout.findByIdAndUpdate(
             req.params.id,
