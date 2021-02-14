@@ -14,8 +14,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-
-
+// establish connection to database
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
@@ -23,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",
     useCreateIndex: true,
     useFindAndModify: false
   });
-
+// requiring routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 

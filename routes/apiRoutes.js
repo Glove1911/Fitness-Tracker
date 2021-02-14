@@ -1,6 +1,6 @@
 
 const db = require("../models");
-
+// route adds a field for total duration and sums the duration of all exercises
 module.exports = (app) => {
     app.get("/api/workouts", (req, res) => {
         db.Workout.aggregate([
@@ -19,7 +19,7 @@ module.exports = (app) => {
 
 
     });
-
+// function to sum weight of all resistance exercises
     app.get("/api/workouts", (req,res) => {
         db.Workout.aggregate([
             {
@@ -31,7 +31,7 @@ module.exports = (app) => {
             }
         ])
     });
-
+// updates workout with new exercise
     app.put("/api/workouts/:id", ( req , res) => {
         db.Workout.findByIdAndUpdate(
             req.params.id,
@@ -59,10 +59,11 @@ module.exports = (app) => {
             res.json(err);
         });
     });
-
+// creates new workout from user input
     app.post("/api/workouts",(req,res) => {
 
         db.Workout.create(req.body).then((dbWorkout =>{
+
             res.json(dbWorkout);
         })).catch(err => {
             res.json(err);
