@@ -1,6 +1,6 @@
 # Fitness-Tracker 
 
-<img src="/public/images/homegage.jpeg>
+<img src="/public/images/homepage.jpeg>
        
 # [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
