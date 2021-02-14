@@ -1,5 +1,6 @@
 # Fitness-Tracker 
 
+<img src="../public/images/homegage.jpeg>
        
 # [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -16,6 +17,7 @@
 
  ## Description
 Fitness Tracker is an application that allows the use to log multiple exercises in a workout on a given day.  The name, type, weight, sets, reps, and duration of exerise are all tracked.  If the exercise is cardio the app will track the distance traveled.
+
 
 
 ## Installation
@@ -55,19 +57,19 @@ node server.js
 ### Create New  Workout
  On the home  page, click 'New Workout' button.
 
-<img src="./public/images/addexercise1.jpg" alt="home page" width="500px" height="250px">
+<img src="../public/images/homepage2.jpeg" alt="home page" width="500px" height="250px">
 
 ### Enter Exercise Type
 1. On the exercise page select cardio or resistance from drop down.
 2. Enter exercise name and if resitance, enter weight, sets, reps, and duration.  For cardio, enter name of exercise, distance, and duration.
 3. Click 'Add Exercise'.   Continue to add exercises until workout is complete then click 'Complete'.
 
-<img src="./public/images/addexercise2.jpg" alt="exercise page" width="500px" height= "250px">
+<img src="../public/images/addexercise2.jpeg" alt="exercise page" width="500px" height= "250px">
 
 ### Dashboard Page
 A graphical representation of the exercises completed, the total duration in minutes, and the total weight lifted during the can be accessed by clicking 'Dashboard'.
 
-<img src= "./public/images/statspage.jpg" alt= "stats page" width= "500px" height="250px">
+<img src= "../public/images/statspage.jpeg" alt= "stats page" width= "500px" height="250px">
 
 ## License
 MIT
